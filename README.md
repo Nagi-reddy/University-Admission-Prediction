@@ -1,1 +1,1 @@
-# University-Admission-Prediction Mchine Learning Project
+# University-Admission-Prediction Machine Learning Project
