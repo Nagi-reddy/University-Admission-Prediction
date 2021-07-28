@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background:linear-gradient(90deg,#ffd89b,#19547b);
+            height:100vh;
+        }
+        .title{
+            font-family: cursive;
+            text-align: center;
+            padding-top: 90px;
+           }
+           h2,h3{
+            font-family:sans-serif;
+           }
+      
+.content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 600px;
+   background:linear-gradient(120deg,#ffd89b,#19547b);
+   border: radius 30px;
+ 
+  
+}
+center{
+   font-size: 3rem;
+}
+ </style>
+</head>
+<title>Admission Prediction</title>
+<body>
+    <div class="content">
+        <div class="title">
+   <h1>UNIVERSITY ADMISSION PREDICTION</h1>
+        </div>
+    <h2>Enter your details</h2>
+    <form action="{{url_for('y_predict')}}" method="POST">
+    <h3>Enter GRE Score</h3>
+  <input type="text" name="gre" placeholder=" GRE Score"><br>
+  <h3>Enter TOEFL</h3>
+  <input type="text" name="tofel" placeholder="Toefl"><br>
+  <h3>Select university no:</h3>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">1</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">2</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">3</label><br>
+  <input type="radio" id="age4" name="age" value="100">
+  <label for="age3">4</label><br>
+  <input type="radio" id="age5" name="age" value="100">
+  <label for="age3">5</label><br>
+  <h3>Enter SOP</h3>
+  <input type="sop" name="sop1" placeholder=" sop Score"><br>
+  <h3>Enter LOR</h3>
+  <input type="lor" name="lor1" placeholder="lor Score"><br>
+  <h3>Enter CGPA</h3>
+  <input type="cgpa" name="cgpa1" placeholder=" cgpa Score"><br>
+ <h3>Research</h3>
+  <input type="radio" id="research" name="re" value="30">
+  <label for="research">1</label><br>
+   <input type="radio" id="norch" name="re" value="30">
+  <label for="norch">0<label><br>
+<center><input type="submit" value="Submit"></center>
+</label>
+</label></div>
+</form>
+</body>
+{{prediction_test}}
+</html>
